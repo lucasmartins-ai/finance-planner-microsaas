@@ -295,9 +295,8 @@ export function DashboardClient({
           <p className="eyebrow">SQLite mock data - {initialViewModel.monthLabel}</p>
           <h1>Monthly financial planner for freelancers</h1>
           <p className="page-lede">
-            A public portfolio demo that shows revenue, expenses, profit, tax reserve,
-            runway, goals, a sales target simulator, and CSV export without requiring
-            live credentials.
+            A planning snapshot for revenue quality, expense pressure, tax reserve,
+            runway, owner targets, and export-ready monthly records.
           </p>
         </div>
         <div className="header-actions">
@@ -768,15 +767,15 @@ export function DashboardClient({
             <FileDown aria-hidden="true" size={22} />
           </div>
           <p className="muted">
-            The CSV route reads the same SQLite-backed mock month as the dashboard.
-            PDF is intentionally left as a documented next step.
+            Export the selected SQLite-backed mock month as a CSV for spreadsheet
+            review.
           </p>
           <a
             className="secondary-action full-width"
             href={`/api/exports/monthly?month=${dateToMonthQuery(initialViewModel.month)}`}
           >
             <FileDown aria-hidden="true" size={17} />
-            Download June CSV
+            Download {initialViewModel.monthLabel} CSV
           </a>
         </div>
       </section>
