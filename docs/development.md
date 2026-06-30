@@ -6,9 +6,7 @@ This repository currently contains a Next.js portfolio demo using TypeScript, in
 
 ## Local Requirements
 
-Planned requirements:
-
-- Node.js LTS
+- Node.js LTS or current stable Node.js
 - npm
 - Vercel account for deployment, if publishing the demo
 
@@ -78,8 +76,6 @@ A portfolio-demo feature is done when:
 10. Add PDF report after CSV and dashboard are stable.
 
 ## Useful Commands
-
-Expected scripts once the app is scaffolded:
 
 ```bash
 npm run dev

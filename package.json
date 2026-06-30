@@ -1,8 +1,20 @@
 {
   "name": "finance-planner-microsaas",
   "version": "0.1.0",
+  "description": "Portfolio-ready Next.js finance planning dashboard with synthetic SQLite data, tested calculations, CSV export, and responsive UI.",
   "private": true,
   "type": "module",
+  "keywords": [
+    "nextjs",
+    "typescript",
+    "finance-dashboard",
+    "portfolio-project",
+    "sqlite",
+    "playwright",
+    "vitest",
+    "recharts",
+    "micro-saas"
+  ],
   "scripts": {
     "dev": "next dev",
     "build": "next build",

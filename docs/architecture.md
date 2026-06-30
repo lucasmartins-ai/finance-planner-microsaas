@@ -31,7 +31,7 @@ In-memory SQLite seed data
 4. **Typed boundaries:** input validation happens before writes and before calculation execution.
 5. **Public maintainability:** docs explain the product, data model, formulas, and API behavior.
 
-## Planned Application Structure
+## Application Structure
 
 ```text
 app/
@@ -84,14 +84,11 @@ supabase/
 
 tests/
   e2e/
-  integration/
   unit/
 ```
 
 ## Module Boundaries
 
-| Module | Owns | Does Not Own |
-| --- | --- | --- |
 | Module | Owns | Does Not Own |
 | --- | --- | --- |
 | `features/dashboard` | Dashboard UI, mock forms, charts, and view model mapping | Core formulas |
