@@ -51,3 +51,17 @@ test("monthly CSV export is available", async ({ page }) => {
   expect(body).toContain("Northstar Studio");
   expect(body).toContain("Profit after tax reserve");
 });
+
+test("dashboard does not create horizontal page overflow", async ({ page }) => {
+  await page.goto("/dashboard");
+
+  const viewportWidths = await page.evaluate(() => ({
+    bodyScrollWidth: document.body.scrollWidth,
+    documentClientWidth: document.documentElement.clientWidth,
+    documentScrollWidth: document.documentElement.scrollWidth,
+  }));
+
+  expect(
+    Math.max(viewportWidths.bodyScrollWidth, viewportWidths.documentScrollWidth),
+  ).toBeLessThanOrEqual(viewportWidths.documentClientWidth + 1);
+});

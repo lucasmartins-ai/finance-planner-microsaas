@@ -561,6 +561,17 @@ tr:last-child td {
     width: 100%;
   }
 
+  .header-actions {
+    display: grid;
+    width: 100%;
+    grid-template-columns: 1fr;
+    align-items: stretch;
+  }
+
+  .month-switcher {
+    width: 100%;
+  }
+
   .nav-list,
   .kpi-grid,
   .content-grid,
@@ -582,5 +593,15 @@ tr:last-child td {
   .chart-frame,
   .chart-frame.small {
     height: 260px;
+  }
+
+  table {
+    min-width: 100%;
+    table-layout: fixed;
+  }
+
+  th,
+  td {
+    overflow-wrap: anywhere;
   }
 }
